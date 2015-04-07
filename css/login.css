@@ -1,6 +1,40 @@
-footer {
-  position: fixed;
-  bottom: 0px;
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* Margin bottom by footer height */
+  padding: 0;
+  margin: 0;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  background-image: url("images/footer.png");
+  /* Set the fixed height of the footer here
+  height: 100%;
+  background-image: url("../images/footer.png");
+  background-size: cover;
+  max-height: 522px;
+  */
+  overflow: hidden;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+.container {
+  width: auto;
+  max-width: 100%;
+  padding: 0 0;
+}
+.container .text-muted {
+  margin: 0 0;
 }
