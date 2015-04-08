@@ -10,10 +10,14 @@ body {
   /* Margin bottom by footer height */
   padding: 0;
   margin: 0;
-  background-color: #e1e7e9;
-  background-image: url("../images/header.png");
-  background-repeat: no-repeat;
+  background: #b5c8e1;
+  background-image: url("../images/clouds.png");
+  background-image: url("../images/clouds.png"), -webkit-linear-gradient(#9cb9e0, #e1e7e9); /* For Safari 5.1 to 6.0 */
+  background-image: url("../images/clouds.png"), -o-linear-gradient(#9cb9e0, #e1e7e9); /* For Opera 11.1 to 12.0 */
+  background-image: url("../images/clouds.png"), -moz-linear-gradient(#9cb9e0, #e1e7e9); /* For Firefox 3.6 to 15 */
+  background-image: url("../images/clouds.png"), linear-gradient(#9cb9e0, #e1e7e9); /* Standard syntax */
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .footer {
@@ -43,7 +47,16 @@ body {
   margin: 0 0;
 }
 
+.login-pad {
+  padding-top: 5em;
+}
 .login-box {
   background-color: rgba(0,0,0,0.2);
   border-radius: 20px;
+  border: 5px solid rgba(0,0,0,0.4);
+  padding: 2em;
+}
+
+.copyright {
+  padding-top: 1em;
 }
