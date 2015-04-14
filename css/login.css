@@ -48,7 +48,7 @@ body {
 }
 
 .login-pad {
-  padding-top: 5em;
+  padding-bottom: 5em;
 }
 .login-box {
   background-color: rgba(0,0,0,0.2);
@@ -57,6 +57,52 @@ body {
   padding: 2em;
 }
 
+#signInBtn, #signOutBtn {
+  display: inline-block;
+  background: #6186e3;
+  color: white;
+  width: 165px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+#signInBtn:hover, #signOutBtn:hover {
+  background: #5879cd;
+  cursor: hand;
+}
+
+span.label {
+  font-weight: bold;
+}
+
+span.icon {
+  background: #6186e3 5px 50%;
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  border-right: #4f72cd 2px solid;
+  font-family: serif;
+  font-weight: normal;
+  padding-left: 10px;
+  font-size: 20px;
+  position: relative;
+}
+
+span.buttonText {
+  display: inline-block;
+  vertical-align: middle;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
 .copyright {
   padding-top: 1em;
+}
+
+.footer-scene {
+  position: relative;
+  z-index: -1;
 }
