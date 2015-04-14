@@ -1,8 +1,8 @@
 #HOST=login.billo.systems
 HOST=ryugi-billo
-REMOTE_DIR=/var/www/billo-login/
+REMOTE_DIR=/var/more-www/billo-login/html
 
 publish:
 	git pull --all && \
-	rsync -vazP {*.html,css,js,images,fonts} $(HOST):$(REMOTE_DIR)
+	rsync -vazP {*.html,css,js,images} $(HOST):$(REMOTE_DIR)
 
